@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "dd30655f-0429-4a80-9f2b-9cdef4b818ee",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8443/crawl/webpage/getStatus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8443/crawl/webpage/getStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"crawl",
+						"webpage",
+						"getStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8443/crawl/webpage/getCrawledResult",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8443/crawl/webpage/getCrawledResult",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"crawl",
+						"webpage",
+						"getCrawledResult"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8443/crawl/webpage/submitURLs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n},\r\n{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n},\r\n{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n},\r\n{\t\"URL\" : \"http://www.mkyong.com/\",\r\n\t\"depth\" :0\r\n}\r\n]\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8443/crawl/webpage/submitURLs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"crawl",
+						"webpage",
+						"submitURLs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8443/crawl/webpage/getAllStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8443/crawl/webpage/getAllStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"crawl",
+						"webpage",
+						"getAllStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
